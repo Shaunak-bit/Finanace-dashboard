@@ -68,7 +68,7 @@ export const getCategoryBreakdown = async (req: Request, res: Response) => {
         });
 
 
-        const categories = group.map((item) => ({
+        const categories = group.map((item: any) => ({
             category: item.category,
             total: item._sum.amount || 0,
         }));
