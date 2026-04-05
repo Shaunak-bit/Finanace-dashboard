@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import prisma from "../lib/prisma";
-import { RecordType, Prisma } from "../generated/prisma";
+import { RecordType, Prisma } from "@prisma/client";
 
 const VALID_TYPES = Object.values(RecordType);
 const CATEGORY_MAX_LENGTH = 50;
